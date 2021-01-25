@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css" id="theme">
+    <title>Semana 1</title>
+</head>
+<header class="site-header">
+    <div class="contenedor contenido-header">
+        <div class="barra">
+            <div class="actividades-centro">
+                <a href="#"><i class="fas fa-home"></i>Home</a>
+                <a href="#" onclick="showForm()"><i class="fas fa-circle icono-circulo"></i>Sugerir Actividad</a>
+            </div>
+            <nav class="navegacion">
+                <div class="iconos">
+                    <a href="#"><i class="fas fa-redo-alt blanco"></i></a>
+                </div>
+                <div class="iconos">
+                    <a href="#" onclick="switchModeSheet()"><i class="fas fa-adjust blanco"></i></a>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<body>
+    <main class="contenido-principal">
+        <div class="contenido">
+            <p>Presiona la barra espaciadora o el boton regenerar de arriba | Haz touch para generar una actividad</p>
+        </div>
+    </main>
+
+    <section class="contenedor-formulario" id="form-activity">
+        <form action="" class="formulario-actividad">
+            <legend><i class="fas fa-circle icono-circulo"></i>Sugerir Actividad</legend>
+            <fieldset>
+                <div class="campo w-100">
+                    <label for="title">Titulo</label>
+                    <input type="text" name="tite" placeholder="Ingresa el titulo de la actividad">
+                </div>
+                <div class="campo w-100">
+                    <label for="email">Email(No te vamos a spamear)</label>
+                    <input type="email" name="email" placeholder="Ingresa tu correo electronico">
+                </div>
+                <div class="campo w-100">
+                    <label for="descripcion">Descripcion</label>
+                    <textarea name="descripcion" placeholder="Ingresa la descripcion de la actividad"></textarea>
+                </div>
+                <div class="mandar">
+                    <a href="#" class="boton boton-salmon">Enviar</a>
+                </div>
+            </fieldset>
+        </form>
+    </section>
+</body>
+<script src="js/funciones.js"></script>
+
+</html>

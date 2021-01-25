@@ -1,0 +1,177 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    background-color: #f3f4f6;
+}
+
+
+/* botones */
+
+.boton {
+    color: #fff;
+    padding: .5rem 3rem;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.8rem;
+    display: inline-block;
+    margin-top: 3rem;
+    text-align: center;
+    border: none;
+    border-radius: .5rem;
+    /*toma todo el espacio disponible*/
+    display: block;
+    flex: 0 0 100%;
+}
+
+.boton-salmon {
+    background-color: #ea5455;
+}
+
+
+/* header */
+
+header {
+    color: aqua;
+}
+
+.contenedor {
+    width: 95%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.barra {
+    width: 50rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.barra a {
+    text-decoration: none;
+    color: #000;
+}
+
+.navegacion,
+.actividades-centro {
+    width: 100%;
+    height: 100%;
+}
+
+.navegacion {
+    display: contents;
+}
+
+a .fa-home {
+    color: darkgreen;
+}
+
+.icono-circulo {
+    color: tomato;
+}
+
+.iconos {
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: tomato;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.iconos {
+    font-size: 2rem;
+}
+
+.iconos a {
+    color: #fff;
+}
+
+.contenido-principal {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*form actividad*/
+
+#form-activity {
+    display: none;
+}
+
+.contenedor-formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario-actividad {
+    width: 400px;
+    background-color: #fafafa;
+    border-radius: .5rem;
+    margin-bottom: 2rem;
+    -webkit-box-shadow: 0px 10px 21px -9px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 10px 21px -9px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 10px 21px -9px rgba(0, 0, 0, 0.75);
+}
+
+.formulario-actividad legend {
+    margin: 0 auto;
+    margin-top: 1rem;
+    padding: 10px 10px;
+}
+
+.formulario-actividad fieldset {
+    border: none;
+    padding: 0 15%;
+    margin-bottom: 4rem;
+}
+
+.formulario-actividad .campo {
+    margin-top: 3rem;
+}
+
+.formulario-actividad label {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.campo input {
+    flex: 1;
+    height: 4rem;
+}
+
+.input-oscuro {
+    background-color: #384151;
+}
+
+input:not([type="submit"]),
+textarea {
+    border-radius: .5rem;
+    background-color: #f3f4f6;
+    display: block;
+    border: none;
+    width: 100%;
+}
+
+.campo textarea {
+    resize: none;
+    height: 10rem;
+}
